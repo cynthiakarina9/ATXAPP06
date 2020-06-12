@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             NavigationPage.TitleIconImageSource="AppATXImagenlogoatx.png"
+             x:Class="ATXBSAPP.Views.Frecuency">
+    <ContentPage.ToolbarItems>
+        <!--<ToolbarItem IconImageSource="atx_logo.png" Priority="0" Clicked="home_Clicked"/>-->
+        <ToolbarItem Icon="AppATXImagenchat.png" Clicked="Chat_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <!--<ContentPage.Content>
+        <Grid>
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout>
+                        <StackLayout  HorizontalOptions="FillAndExpand" Grid.Row="0">
+                            <Image Source="ebooks.pgn"></Image>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" Padding="15,40,15,40" Spacing="20" Grid.Row="1">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Binding [0].atx_name}" FontSize="Large" TextColor="#0067b0"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label Text="{Binding [0].atx_respuesta}" TextColor="Black" FontSize="Body"/>
+                            <Button Text="{Binding [0].new_url}" Clicked="Link1_Clicked" TextColor="#55befa" BackgroundColor="Transparent"/>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Binding [1].atx_name}" FontSize="Large" TextColor="#0067b0"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                        <Span Text="{Binding [1].atx_respuesta}" TextColor="Black" FontSize="Body"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Button Text="{Binding [1].new_url}" Clicked="Link1_Clicked" TextColor="#55befa" BackgroundColor="Transparent"/>    
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Binding [2].atx_name}" FontSize="Large" TextColor="#0067b0"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                        <Span Text="{Binding [2].atx_respuesta}" TextColor="Black" FontSize="Body"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Button Text="{Binding [2].new_url}" Clicked="Link1_Clicked" TextColor="#55befa" BackgroundColor="Transparent"/>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Binding [3].atx_name}" FontSize="Large" TextColor="#0067b0"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                        <Span Text="{Binding [3].atx_respuesta}" TextColor="Black" FontSize="Body"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Button Text="{Binding [3].new_url}" Clicked="Link1_Clicked" TextColor="#55befa" BackgroundColor="Transparent"/>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Binding [4].atx_name}" FontSize="Large" TextColor="#0067b0"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                        <Span Text="{Binding [4].atx_respuesta}" TextColor="Black" FontSize="Body"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Button Text="{Binding [4].new_url}" Clicked="Link1_Clicked" TextColor="#55befa" BackgroundColor="Transparent"/>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Binding [5].atx_name}" FontSize="Large" TextColor="#0067b0"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="{Binding [5].atx_respuesta}" TextColor="Black"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                                <Button Text="{Binding [5].new_url}" Clicked="Link1_Clicked" TextColor="#55befa" BackgroundColor="Transparent"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>-->
+
+
+
+
+
+
+    <ListView x:Name="get_noticias" Header="" BackgroundColor="White" HasUnevenRows="True" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.4*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions >
+
+
+                        <Label Grid.Row="1" Text="{Binding atx_name}" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" TextColor="#0067b0" FontSize="Medium"></Label>
+                        <Label Grid.Row="1" Margin="0,30,0,50" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Text="{Binding atx_respuesta}" TextColor="Black" MaxLines="5"></Label>
+
+                        <Button Grid.Row="1" Margin="0,30,0,0" VerticalOptions="End" HorizontalOptions="CenterAndExpand" Text="Más información" CommandParameter="{Binding new_url}" Clicked="Mas_info_Clicked" TextColor="#1085c8" BackgroundColor="Transparent"/>
+
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+        <ListView.HeaderTemplate>
+            <DataTemplate>
+                <ContentView BackgroundColor="#0066cc">
+                    <Label Margin="10" HorizontalOptions="CenterAndExpand" Text="Ebooks" FontSize="Title" TextColor="White"/>
+                </ContentView>
+            </DataTemplate>
+        </ListView.HeaderTemplate>
+    </ListView>
+
+
+
+
+
+</ContentPage>

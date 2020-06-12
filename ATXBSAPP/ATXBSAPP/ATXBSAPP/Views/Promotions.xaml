@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             NavigationPage.TitleIconImageSource="AppATXImagenlogoatx.png"
+             x:Class="ATXBSAPP.Views.Promotions">
+    <ContentPage.ToolbarItems>
+        <!--<ToolbarItem IconImageSource="atx_logo.png" Priority="0" Clicked="home_Clicked"/>-->
+        <ToolbarItem Icon="AppATXImagenchat.png" Clicked="Chat_Clicked" />
+    </ContentPage.ToolbarItems>
+    <!--<Grid>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout  HorizontalOptions="FillAndExpand" Grid.Row="0">
+                    <Image Source="PROMOCION.pgn"></Image>
+                </StackLayout>
+                <StackLayout BackgroundColor="#0067b0">
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="{Binding [0].atx_name}" FontSize="Large" TextColor="#ffffff"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label/>
+                    
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="{Binding [0].atx_descripcion}" TextColor="Black"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Valido desde: " TextColor="#ffffff" FontAttributes="Bold"/>
+                                    <Span Text="{Binding [0].atx_validadesde}"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Valido hastaa: " TextColor="#ffffff" FontAttributes="Bold"/>
+                                    <Span Text="{Binding [0].atx_validahasta}"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+                <StackLayout BackgroundColor="LightGray">
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="{Binding [1].atx_name}" FontSize="Large" TextColor="#000000"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label/>
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="{Binding [1].atx_descripcion}" TextColor="#000000"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Valido desde: " TextColor="#000000" FontAttributes="Bold"/>
+                                    <Span Text="{Binding [1].atx_validadesde}"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Valido hasta: " TextColor="#000000" FontAttributes="Bold"/>
+                                    <Span Text="{Binding [1].atx_validahasta}"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+                <StackLayout BackgroundColor="#0067b0">
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="{Binding [2].atx_name}" FontSize="Large" TextColor="#ffffff"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label/>
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="{Binding [2].atx_descripcion}" TextColor="#ffffff"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Valido desde: " TextColor="#ffffff" FontAttributes="Bold"/>
+                                    <Span Text="{Binding [2].atx_validadesde}"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Valido hasta: " TextColor="#ffffff" FontAttributes="Bold"/>
+                                    <Span Text="{Binding [2].atx_validahasta}"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+                <StackLayout BackgroundColor="LightGray">
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="{Binding [3].atx_name}" FontSize="Large" TextColor="#000000"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label/>
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="{Binding [3].atx_descripcion}" TextColor="#000000"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Valido desde: " TextColor="#000000" FontAttributes="Bold"/>
+                                    <Span Text="{Binding [3].atx_validadesde}"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Margin="20,0,20,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Valido hasta: " TextColor="#000000" FontAttributes="Bold"/>
+                                    <Span Text="{Binding [3].atx_validahasta}"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </Grid>-->
+
+
+
+
+
+
+
+    <ListView x:Name="get_soluciones" Header="" BackgroundColor="White" HasUnevenRows="True" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="10" >
+                        <Grid.RowDefinitions Margin="0,20,0,20">
+                            <RowDefinition Height="0.3*" />
+                            <RowDefinition Height="1*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <!--<Image Grid.RowSpan="2" Source="{Binding ImageUrl}" Aspect="AspectFill" HeightRequest="60" WidthRequest="60" />-->
+
+                        <Image Grid.Row="0" Aspect="AspectFill" Margin="5,5,5,5" WidthRequest="150" Source="{Binding atx_urlimagen}"></Image>
+                        <Label Grid.Column="1" Text="{Binding atx_name}" Margin="5,5,5,5" TextColor="#0067b0" FontSize="Medium"></Label>
+                        <Label Grid.Row="1" VerticalOptions="CenterAndExpand" Margin="5,5,5,5" Text="{Binding atx_descripcion}" TextColor="Black"></Label>
+                        <!--<Label Text="{Binding adx_releasedate}" TextColor="#2e86c1" Margin="0,3,0,3"></Label>-->
+
+                        <Button Grid.Row="1" VerticalOptions="CenterAndExpand" Margin="5,5,5,5" Grid.Column="1" Text="Más información" CommandParameter="{Binding atx_urlmasinformacion}" Clicked="Mas_info_Clicked" TextColor="#1085c8" BackgroundColor="Transparent"/>
+
+                        <!--<Label Text="{Binding new_linkpost}" TextColor="Blue" Margin="0,3,0,15">></Label>-->
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+        <ListView.HeaderTemplate>
+            <DataTemplate>
+                <ContentView BackgroundColor="#0066cc">
+                    <Label Margin="10" HorizontalOptions="CenterAndExpand" Text="Soluciones" FontSize="Title" TextColor="White"/>
+                </ContentView>
+            </DataTemplate>
+        </ListView.HeaderTemplate>
+    </ListView>
+
+
+</ContentPage>
